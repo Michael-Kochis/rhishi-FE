@@ -7,7 +7,7 @@ export const axiosWithAuth = () => {
         headers: {
             authorization: JSON.parse(token)
         },
-        baseURL: 'https://anywhere-fitness-2021.herokuapp.com/api'
+        baseURL: 'https://rhishisikk-api.herokuapp.com/api'
     });
 }
 

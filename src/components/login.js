@@ -36,7 +36,7 @@ function LoginForm(props) {
 
     const postNewLogin = (newLogin) => {
         axios
-          .post('https://anywhere-fitness-2021.herokuapp.com/api/users/login', newLogin)
+          .post('https://rhishisikk-api.herokuapp.com/api/auth/login', newLogin)
           .then((res) => {
             //console.log('login', res);
             const token = res.data.token;

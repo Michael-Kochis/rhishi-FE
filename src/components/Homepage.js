@@ -55,7 +55,7 @@ function Homepage() {
     return (
         <Container>
             <InfoContainer>
-                <h1>Welcome to Anywhere Fitness!</h1>
+                <h1>Welcome to Digital Dreams!</h1>
                 <p>Please either</p>
                 <button onClick={handleLogin}>Login</button>
                 <p>or</p>
