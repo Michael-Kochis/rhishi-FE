@@ -1,0 +1,25 @@
+.search-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.search {
+    height: 40px;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    /* padding: 5%; */
+    width: 130px;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+}
