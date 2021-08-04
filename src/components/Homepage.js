@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     margin-top: 1%;
-    background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80');
     height:90vh;
     display: flex;
     justify-content: center;

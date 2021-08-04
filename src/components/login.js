@@ -41,15 +41,7 @@ function LoginForm(props) {
             //console.log('login', res);
             const token = res.data.token;
             localStorage.setItem('token', `"${token}"`);
-            if (res.data.skip === false && res.data.role === 'client') {
-                history.push(`/client/onboarding/${res.data.userId}`)
-            } else if (res.data.skip === false && res.data.role === 'instructor') {
-                history.push(`/instructor/onboarding/${res.data.userId}`)
-            } else if (res.data.skip === true && res.data.role === 'client') {
-                history.push(`/client/${res.data.userId}`)
-            } else {
-                history.push(`/instructor/${res.data.userId}`);
-            }
+            history.push("/dashboard");
           })
           .catch((err) => {
             console.log({err});

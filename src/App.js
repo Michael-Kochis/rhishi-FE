@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import './index.css';
 import styled from 'styled-components';
 //CUSTOM IMPORTS
+import { Dashboard } from './components/Dashboard';
 import LoginForm from './components/login';
 import RegisterForm from './components/register';
 import Homepage from './components/Homepage';
@@ -42,6 +43,7 @@ function App() {
         <h1 className="mainHeading">Rhishisikk</h1>
           <StyledLink onClick={logout} to="/">Logout</StyledLink>
           <Switch>
+            <PrivateRoute path='/dashboard' component={Dashboard} />
             <Route path="/login">
               <LoginForm />
             </Route>
