@@ -40,7 +40,7 @@ function App() {
     <>
       <Router>
         <div className="logoAndHeading"></div>
-        <h1 className="mainHeading">Rhishisikk</h1>
+        <h1 className="mainHeading">Repair Merchant</h1>
           <StyledLink onClick={logout} to="/">Logout</StyledLink>
           <Switch>
             <PrivateRoute path='/dashboard' component={Dashboard} />
