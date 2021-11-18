@@ -17,7 +17,7 @@ function Dashboard(props) {
     return (
         <div>
             {persona && persona.map((star) => {
-                return <PersonaBar persona={star} />
+                return <PersonaBar key={star.personaID} persona={star} />
             })}
         </div>
     )
