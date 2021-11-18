@@ -10,7 +10,6 @@ import LoginForm from './components/login';
 import RegisterForm from './components/register';
 import Homepage from './components/Homepage';
 import PrivateRoute from './components/PrivateRoute';
-import { NavBar } from './components/NavBar';
 
 const StyledLink = styled(Link)`
   color: black;
@@ -41,7 +40,6 @@ function App() {
     <>
       <Router>
         <div className="logoAndHeading"></div>
-        <NavBar />
           <StyledLink onClick={logout} to="/">Logout</StyledLink>
           <Switch>
             <PrivateRoute path='/dashboard' component={Dashboard} />
