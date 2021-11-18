@@ -6,7 +6,7 @@ function PersonaBar(props) {
 
     return (
         <div>
-            <p>{personaName}  ID={personaID}</p>
+            <p>{personaName}    ID={personaID}</p>
         </div>
     );
 }
