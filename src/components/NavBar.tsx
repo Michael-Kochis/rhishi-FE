@@ -7,7 +7,7 @@ function NavBar(props: any) {
     return(
         <div>
             <h1 className="mainHeading">Repair Merchant</h1>
-            <FontAwesomeIcon icon ={faPlusSquare} /> 
+            <FontAwesomeIcon icon ={faPlusSquare} size="3x" color="lime" /> 
         </div>
     );
 }
