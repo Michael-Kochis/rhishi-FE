@@ -23,7 +23,7 @@ function MerchantForm(props) {
         }
         axiosWithAuth().post("/persona", merchRegister)
             .then(resp => {
-                //console.log(resp.data);
+                // do nothing on success
             }).catch((err) => {
                 console.log({err});
                 alert(err.response.data.message);
