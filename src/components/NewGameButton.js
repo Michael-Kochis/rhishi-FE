@@ -24,8 +24,17 @@ function NewGameButton(props) {
         }
         axiosWithAuth().post("/persona", merchRegister)
             .then(resp => {
-                console.log(resp.data);
-                closeModal();
+                console.log(resp.data[0]);
+                let {personaID} = resp.data[0];
+                console.log(personaID);
+                axiosWithAuth().post(`/persona-trait/repairMerchant/${personaID}`, resp.data[0])
+                    .then (resp => {
+                        console.log(resp.data);
+                        closeModal();
+                    }).catch((err) => {
+                    console.log({err});
+                    alert(err.response.data.message);
+                })
             }).catch((err) => {
                 console.log({err});
                 alert(err.response.data.message);
