@@ -8,8 +8,6 @@ const schema = yup.object().shape({
         .required('password is required'),
     confirmPassword: yup.string()
         .required('password confirmation is required'),
-    role: yup.string()
-        .oneOf(["client", "instructor"])
 })
 
 const loginSchema = yup.object().shape({

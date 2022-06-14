@@ -80,15 +80,6 @@ function RegisterForm(props) {
                 <input id="confirmPassword" name="confirmPassword" type="password" onChange={handleChange} 
                 value={form.confirmPassword} />
             </label>
-            <div id="error-role" className="error error-role" >{shaped.role}</div>
-            <label id="label-role" htmlFor="role" onChange={handleChange} 
-                value={form.role}>Role
-                <select id="role" name="role">
-                <option value="">Select Role</option>
-                <option value="client">Client</option>
-                <option value="instructor">Instructor</option>
-                </select>
-            </label>
             <button id="button-register" className="btn btn-register"
                 disabled={disabled} onClick={handleSubmit}>Register</button>
             <button id="button-nav-login" className="btn nav-btn nav-login"
