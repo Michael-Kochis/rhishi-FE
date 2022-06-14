@@ -20,8 +20,12 @@ function RegisterForm(props) {
     let history = useHistory();
 
     const postNewUsers = (user) => {
+        let neoUser = {
+            username: user.username,
+            password: user.password
+        }
         axios
-          .post('https://rhishisikk-api.herokuapp.com/api/auth/register', user)
+          .post('https://rhishisikk-api.herokuapp.com/api/auth/register', neoUser)
           .then((res) => {
             console.log(res.data);
             history.push('/login');
