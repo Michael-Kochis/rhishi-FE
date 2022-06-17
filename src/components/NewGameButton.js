@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Button, Form, Modal} from 'react-bootstrap'
 import '../styles/login.css'
+import { useHistory } from 'react-router-dom'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPlusSquare} from '@fortawesome/free-solid-svg-icons'
@@ -10,11 +11,13 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 function NewGameButton(props) {
     const [modalOpen, setModalOpen] = useState();
     const [name, setName] = useState("");
-    
+    let history = useHistory();
+
     function closeModal() {
         setName("");
         setModalOpen(false);
-        //window.location.reload();
+        history.push("/login");
+        history.push("/dashboard");
     }
 
     function handleSubmit(e) {
