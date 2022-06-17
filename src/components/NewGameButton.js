@@ -16,8 +16,8 @@ function NewGameButton(props) {
     function closeModal() {
         setName("");
         setModalOpen(false);
-//        history.push("/dashboard");
-        location.refresh(true);
+        history.push("/login");
+        history.push("/dashboard");
     }
 
     function handleSubmit(e) {
