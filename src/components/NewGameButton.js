@@ -14,7 +14,7 @@ function NewGameButton(props) {
     function closeModal() {
         setName("");
         setModalOpen(false);
-        window.location.reload();
+        //window.location.reload();
     }
 
     function handleSubmit(e) {
