@@ -1,8 +1,4 @@
-[build]
-  base = "project/"
-
-
 [[redirects]]
   from = "/*"
-  to = "/blog/:splat"
+  to = "/:splat"
 
