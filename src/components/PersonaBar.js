@@ -18,7 +18,7 @@ function PersonaBar(props) {
         <div>
             <p>{personaName}    ID={personaID}</p>
             {personaTrait && personaTrait.map((star) => {
-                <p> {star.traitID} bonus= {star.bonus} max={star.max}  </p>
+                return <p> {star.traitID} bonus= {star.bonus} max={star.max}  </p>
             })}
         </div>
     );
