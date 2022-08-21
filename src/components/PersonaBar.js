@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import '../styles/login.css'
-import axiosWithAuth from "../utils/axiosWithAuth";
+// import axiosWithAuth from "../utils/axiosWithAuth";
 
 function PersonaBar(props) {
     const { personaID, personaName } = props.persona;
