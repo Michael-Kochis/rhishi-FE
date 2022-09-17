@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import HexGridDemo from './Hexgrid';
+import HexGridDemo from './Grid';
 import PersonaBar from './PersonaBar';
 import axiosWithAuth from '../utils/axiosWithAuth';
 
