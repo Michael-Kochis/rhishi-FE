@@ -50,14 +50,13 @@ function Homepage() {
     const handleLogin = () => {
         push('/login')
     }
-    const NEO_URI=process.env.NEO_URI
 
     return (
         <Container>
             <InfoContainer>
                 <h1>Welcome to Kira Games!</h1>
                 <p>Please either</p>
-                <p>${NEO_URI}</p>
+                <p>{process.env.NEO_URI}</p>
                 <div>
                     <button onClick={handleLogin}>Login</button>
                     or
