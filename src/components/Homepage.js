@@ -54,11 +54,13 @@ function Homepage() {
     return (
         <Container>
             <InfoContainer>
-                <h1>Welcome to Digital Dreams!</h1>
+                <h1>Welcome to Kira Games!</h1>
                 <p>Please either</p>
-                <button onClick={handleLogin}>Login</button>
-                <p>or</p>
-                <button onClick={handleRegister}>Register</button>
+                <div>
+                    <button onClick={handleLogin}>Login</button>
+                    or
+                    <button onClick={handleRegister}>Register</button>
+                </div>
             </InfoContainer>
         </Container>
     )
