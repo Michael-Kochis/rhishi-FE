@@ -57,7 +57,7 @@ function Homepage() {
             <InfoContainer>
                 <h1>Welcome to Kira Games!</h1>
                 <p>Please either</p>
-                <div>{!!(this.NEO_URI)?this.NEO_URI:"not found"}</div>
+                <div>{!!(NEO_URI)?NEO_URI:"not found"}</div>
                 <div>
                     <button onClick={handleLogin}>Login</button>
                     or
