@@ -50,7 +50,6 @@ function Homepage() {
     const handleLogin = () => {
         push('/login')
     }
-    const NEO_URI=process.env.NEO_URI
 
     return (
         <Container>
